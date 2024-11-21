@@ -774,13 +774,27 @@ void Vortex(sil::Image& image)
 
 }
 
-void Normalisation(sil::Image image)
+void Normalisation(sil::Image& image)
 {
     int width {image.width()};
     int height {image.height()};
     sil::Image normalisation{width,height};
 
-    float minLumi{1.0f}
+    float minLumi{1.0f};
+    float maxLumi{0.0f};
+
+    for (const glm::vec3& color : image.pixels())
+    {
+        float Lumi = 0.3f * color.r + 0.59f * color.g + 0.11f * color.b;
+        minLumi = std::min(minLumi, Lumi);
+        maxLumi = std::max(maxLumi, Lumi);
+    }
+    for (glm::vec3& color : image.pixels())
+    {
+        float luminance = 0.3f * color.r + 0.59f * color.g + 0.11f * color.b;
+        float NormalLumi = (luminance - minLumi) / (maxLumi - minLumi);
+        color = color * NormalLumi/luminance ;
+    }
 }
 
 
@@ -988,6 +1002,13 @@ int main()
     //     image.save("output/VortexV1.png");
 
     // }
+
+    {
+        sil::Image image{"images/photo_faible_contraste.jpg"};
+        Normalisation(image);
+        image.save("output/Normalisation.jpg");
+
+    }
 
 
 }
