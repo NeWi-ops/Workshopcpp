@@ -100,17 +100,15 @@ ma difficulté ici a été de correctement séparer en 3 if afin d'avoir le plus
 
 ### **Disque**
 
-- Avant :
-![Image avant effet](images/logo.png)
-- Après :
+
+On part d'une image noire
 ![Image après effet](output/Disk.png)
 
 
 ### **Cercle**
 
-- Avant :
-![Image avant effet](images/logo.png)
-- Après :
+On part d'une image noire
+
 ![Image après effet](output/Circle.png)
 
 
