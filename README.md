@@ -195,7 +195,7 @@ J'ai eu plusieurs soucis avec la premiere tentative. Des points qui avaient subi
 
 ![Image bug](output/VortexBug.png)
 
-J'ai trouvé une parade mais ne résolvait le problème qu'en surface en rendant noir les pixels qui ne changeaient pas de place : 
+J'ai trouvé une parade mais qui ne résolvait le problème qu'en surface en rendant noir les pixels qui ne changeaient pas de place : 
 
 ![Image bug](output/VortexV1.png)
 

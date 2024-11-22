@@ -811,7 +811,7 @@ void Vortex(sil::Image& image)
     int Vheight = Vortex.height();
     int Iwidth = image.width();
     int Iheight = image.height();
-    double maxangle = 25*M_PI;
+    double maxangle = 10*M_PI;
     glm::vec2 CenterRotation(Iwidth/2, Iheight/2);
 
     for (int y = 0; y < Iheight; ++y) 
