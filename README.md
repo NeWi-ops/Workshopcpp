@@ -177,7 +177,7 @@ Puis on le transpose dans l'espace Lab :
 ### **Fractale de Mandelbrot**
 
 On part d'une image noir à la base et on obtient ceci :
-![Image après effet](output/Glitch.png)
+![Image après effet](output/MandelbrotFractal.png)
 
 
 ### **Normalisation de l'histogramme**
