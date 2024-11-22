@@ -61,7 +61,7 @@ ensuite j'ai le même soucis puisque j'ai simplement retiré la partie qui écha
 
 Cette fois ci on utilise ici swap qui permet d'échanger de position les pixels directement et qui résout donc le problème qui faisait que l'on traitait des pixels qui avaient déjà changé de position.
 - Après :
-![Image après effet](output/MirrorBug2.png)
+![Image après effet](output/Mirror.png)
 
 
 ### **Image bruitée**
