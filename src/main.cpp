@@ -868,7 +868,6 @@ void Normalisation(sil::Image& image)
 
 
 
-
 int main()
 {
     {
